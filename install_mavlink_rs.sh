@@ -11,4 +11,4 @@ cargo build --release
 
 #include compiled library with rustc
 
-rustc -L path/to/compiled/library your_program.rs --extern mavlink=path/to/compiled/mavlink.rlib
+#rustc -L path/to/compiled/library your_program.rs --extern mavlink=path/to/compiled/mavlink.rlib
