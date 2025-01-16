@@ -1,5 +1,11 @@
 
 
+#update and install build essential
+sudo apt update
+sudo apt install build-essential pkg-config libssl-dev
+sudo apt install cargo
+rustup update
+
 # clone the the git repo for mavlink-rs
 
 git clone https://github.com/elmopl/mavlink-rs.git
