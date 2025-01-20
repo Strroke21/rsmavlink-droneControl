@@ -260,7 +260,7 @@ fn send_position_setpoint(
 fn arm_and_takeoff(vehicle: &mut MavlinkConnection<MavMessage>, target_alt: f32) -> Result<(), Box<dyn Error>> {
     // Set to GUIDED mode and wait for confirmation
     loop {
-        set_vehicle_mode(vehicle, "GUIDED")?;
+        VehicleMode(vehicle, "GUIDED")?;
         println!("Vehicle in GUIDED mode");
         thread::sleep(Duration::from_secs(1));
 
